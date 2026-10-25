@@ -1,0 +1,105 @@
+{
+  "products": [
+    {
+      "id": "nebula-bomber",
+      "name": "Nebula Bomber",
+      "price": 229,
+      "category": "jackets",
+      "description": "Cropped bomber with a deep violet sheen.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 20
+    },
+    {
+      "id": "vanta-parka",
+      "name": "Vanta Parka",
+      "price": 399,
+      "category": "parkas",
+      "description": "Long parka, storm hood, fleece-lined pockets.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 12
+    },
+    {
+      "id": "ion-vest",
+      "name": "Ion Vest",
+      "price": 159,
+      "category": "vests",
+      "description": "Packable insulated vest for layering.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 18
+    },
+    {
+      "id": "prism-windbreaker",
+      "name": "Prism Windbreaker",
+      "price": 179,
+      "category": "shells",
+      "description": "Featherweight windbreaker that packs into its pocket.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 16
+    },
+    {
+      "id": "void-fleece",
+      "name": "Void Fleece",
+      "price": 139,
+      "category": "fleece",
+      "description": "Heavyweight recycled fleece, relaxed fit.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 25
+    },
+    {
+      "id": "eclipse-shell",
+      "name": "Eclipse Shell",
+      "price": 249,
+      "category": "shells",
+      "description": "Weather-ready technical shell.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 14
+    },
+    {
+      "id": "orbit-puffer",
+      "name": "Orbit Puffer",
+      "price": 289,
+      "category": "puffers",
+      "description": "Insulated puffer for cold-weather layering.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 10
+    }
+  ],
+  "users": [],
+  "carts": {},
+  "orders": []
+}

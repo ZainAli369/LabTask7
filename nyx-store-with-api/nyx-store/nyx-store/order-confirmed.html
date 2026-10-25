@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order confirmed | NYX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen antialiased">
+
+<header class="sticky top-0 z-50 border-b border-[#1c1a2b] bg-[#07060d]/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3" aria-label="Main">
+    <a href="index.html" class="flex items-center gap-3 font-bold tracking-[.3em]">
+      <span class="grid h-11 w-11 place-items-center rounded-xl bg-[#a855f7] text-lg tracking-normal">N</span>NYX
+    </a>
+    <input type="checkbox" id="menu" class="peer sr-only">
+    <div class="hidden items-center gap-8 md:flex"><a href="shop.html" class="text-[#9a97b0] hover:text-white transition-colors">Shop</a><a href="index.html#collections" class="text-[#9a97b0] hover:text-white transition-colors">Collections</a><a href="index.html#technology" class="text-[#9a97b0] hover:text-white transition-colors">Technology</a><a href="index.html#reviews" class="text-[#9a97b0] hover:text-white transition-colors">Reviews</a></div>
+    <div class="flex items-center gap-2">
+      <a href="login.html" class="pill hidden px-4 py-2 text-sm hover:border-[#a855f7] sm:block">Log in</a>
+      <a href="signup.html" class="pill hidden px-4 py-2 text-sm hover:border-[#a855f7] sm:block">Sign up</a>
+      <a href="cart.html" class="pill flex items-center gap-2 px-4 py-2 text-sm hover:border-[#a855f7]">Cart (3)</a>
+      <label for="menu" class="pill grid h-10 w-10 cursor-pointer place-items-center md:hidden" aria-label="Toggle menu">
+        <span class="block h-0.5 w-4 bg-white shadow-[0_6px_0_#fff,0_-6px_0_#fff]"></span>
+      </label>
+    </div>
+    <div class="absolute left-0 right-0 top-full hidden flex-col gap-4 border-b border-[#1c1a2b] bg-[#07060d] px-5 py-5 peer-checked:flex md:!hidden">
+      <a href="shop.html" class="text-[#9a97b0] hover:text-white transition-colors">Shop</a><a href="index.html#collections" class="text-[#9a97b0] hover:text-white transition-colors">Collections</a><a href="index.html#technology" class="text-[#9a97b0] hover:text-white transition-colors">Technology</a><a href="index.html#reviews" class="text-[#9a97b0] hover:text-white transition-colors">Reviews</a>
+      <a href="login.html" class="text-[#9a97b0]">Log in</a>
+      <a href="signup.html" class="text-[#9a97b0]">Sign up</a>
+    </div>
+  </nav>
+</header>
+
+<main class="mx-auto max-w-lg px-5 pt-20 text-center">
+  <div class="panel p-10"><p class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[#a855f7] text-2xl">✓</p>
+  <h1 class="mt-6 text-3xl font-bold">Order placed</h1>
+  <p class="mt-3 text-[#9a97b0]">We'll email your receipt and tracking link once it ships.</p>
+  <a href="shop.html" class="btn mt-8">Continue shopping</a></div>
+</main>
+<footer class="mt-24 border-t border-[#1c1a2b]">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-4">
+    <div><p class="font-bold tracking-[.3em]">NYX</p><p class="mt-3 max-w-xs text-sm text-[#9a97b0]">Outerwear built from recycled fabric, tested to -20°C.</p></div>
+    <div><p class="mb-3 font-semibold">Shop</p><ul class="space-y-2 text-sm text-[#9a97b0]"><li><a href="shop.html" class="hover:text-white">All products</a></li><li><a href="shop.html#puffers" class="hover:text-white">Puffers</a></li><li><a href="shop.html#shells" class="hover:text-white">Shells</a></li></ul></div>
+    <div><p class="mb-3 font-semibold">Account</p><ul class="space-y-2 text-sm text-[#9a97b0]"><li><a href="login.html" class="hover:text-white">Log in</a></li><li><a href="signup.html" class="hover:text-white">Create account</a></li><li><a href="cart.html" class="hover:text-white">Cart</a></li></ul></div>
+    <form action="index.html" method="get"><p class="mb-3 font-semibold">Get drop alerts</p>
+      <label for="nl" class="sr-only">Email</label>
+      <div class="flex gap-2"><input id="nl" name="email" type="email" required placeholder="you@email.com" class="field"><button class="btn shrink-0">Join</button></div></form>
+  </div>
+  <p class="border-t border-[#1c1a2b] py-5 text-center text-xs text-[#5d5a73]">© 2026 NYX. All rights reserved.</p>
+</footer>
+</body></html>

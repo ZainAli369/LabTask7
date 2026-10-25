@@ -1,0 +1,41 @@
+
+/* NYX store - custom CSS (Tailwind handles layout/utilities) */
+:root{
+  --bg:#07060d; --panel:#0d0c16; --line:#1c1a2b; --text:#f3f1fa; --muted:#9a97b0;
+  --violet:#a855f7; --cyan:#06b6d4; --pink:#e879f9;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:54px 54px}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.grad-text{background:linear-gradient(90deg,var(--cyan),var(--violet) 55%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:1.25rem}
+.pill{border:1px solid var(--line);border-radius:999px;background:rgba(13,12,22,.7)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:999px;font-weight:600;
+  background:var(--violet);color:#fff;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#9333ea}
+.btn:active{transform:scale(.98)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{background:#15132200;border-color:var(--violet)}
+.field{width:100%;background:#0a0913;border:1px solid var(--line);border-radius:.85rem;padding:.8rem 1rem;color:var(--text);font:inherit}
+.field:focus{border-color:var(--violet);outline:none;box-shadow:0 0 0 3px rgba(168,85,247,.25)}
+.field::placeholder{color:#5d5a73}
+label.lbl{display:block;font-size:.8rem;color:var(--muted);margin-bottom:.35rem}
+.hero-glow{box-shadow:0 0 120px -10px rgba(139,60,246,.55)}
+/* product artwork: CSS puffer jacket. Replace with <img> when you have photos */
+.art{position:relative;aspect-ratio:4/5;display:grid;place-items:center;overflow:hidden;border-radius:1rem;
+  background:radial-gradient(circle at 50% 40%,rgba(168,85,247,.16),transparent 65%),#0a0913}
+.jacket{width:74%;aspect-ratio:1/1.02;
+  clip-path:polygon(35% 8%,42% 3%,58% 3%,65% 8%,88% 22%,97% 82%,84% 87%,78% 50%,76% 93%,24% 93%,22% 50%,16% 87%,3% 82%,12% 22%);
+  background:
+    linear-gradient(90deg,transparent 49.3%,rgba(0,0,0,.65) 49.3% 50.7%,transparent 50.7%),
+    repeating-linear-gradient(0deg,rgba(0,0,0,.28) 0 2px,transparent 2px 44px),
+    linear-gradient(135deg,var(--a),var(--b) 50%,var(--c))}
+.jacket.big{width:68%}
+.tag{position:absolute;top:.8rem;left:.8rem;font-size:.7rem;letter-spacing:.14em;padding:.3rem .7rem;border-radius:999px;background:rgba(7,6,13,.8);border:1px solid var(--line);color:var(--muted)}
+.stars{color:#fbbf24;letter-spacing:.1em}
+.qty{width:4.5rem;text-align:center}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
